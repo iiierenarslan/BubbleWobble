@@ -48,48 +48,40 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovement()
     {
-        // Get input for movement
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        // Get the camera's forward and right directions
         Vector3 cameraForward = Camera.main.transform.forward;
         Vector3 cameraRight = Camera.main.transform.right;
 
-        // Flatten the camera vectors (remove vertical component)
         cameraForward.y = 0;
         cameraRight.y = 0;
 
 
-        // Calculate movement direction relative to the camera
         Vector3 inputDirection = (cameraForward * verticalInput + cameraRight * horizontalInput).normalized;
 
         inputDirection.Normalize();
 
-        // If there's input, move; otherwise, stop
         if (horizontalInput != 0 || verticalInput != 0)
         {
             moveDirection = inputDirection * speed;
         }
         else
         {
-            moveDirection = Vector3.zero; // Stop movement when input is released
+            moveDirection = Vector3.zero; 
         }
 
-        // Apply manual gravity
         if (!isGrounded)
         {
             moveDirection.y += gravity * gravityScale;
         }
         else
         {
-            moveDirection.y = rb.velocity.y; // Retain current vertical velocity if grounded
+            moveDirection.y = rb.velocity.y; 
         }
 
-        // Apply movement to the Rigidbody
         rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
 
-        // Rotate the player to face the movement direction
         if (new Vector3(inputDirection.x, 0, inputDirection.z).magnitude > 0.1f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(new Vector3(inputDirection.x, 0, inputDirection.z));

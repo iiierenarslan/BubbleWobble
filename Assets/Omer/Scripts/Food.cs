@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Food : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Food : MonoBehaviour
     public float moveSpeed;
     private bool isTriggered;
 
+
     void Start()
     {
         col = GetComponents<Collider>();
@@ -18,7 +20,6 @@ public class Food : MonoBehaviour
         {
             c.isTrigger = false;
         }
-
     }
 
     private void Update()
@@ -45,6 +46,7 @@ public class Food : MonoBehaviour
             }
         }
     }
+
     void MoveToPlayer()
     {
         transform.position = Vector3.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
