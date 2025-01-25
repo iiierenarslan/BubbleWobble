@@ -1078,6 +1078,7 @@ MonoBehaviour:
   minX: -70
   maxX: -45
   scale: 4
+  distanceScalingFactor: 0.2
 --- !u!1 &1044827839
 GameObject:
   m_ObjectHideFlags: 0

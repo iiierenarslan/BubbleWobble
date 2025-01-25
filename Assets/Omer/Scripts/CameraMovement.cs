@@ -13,11 +13,10 @@ public class CameraMovement : MonoBehaviour
     public float minX;
     public float maxX;
 
-    public float scale;
-
     private float yaw; 
     private float pitch; 
 
+    public float distanceScalingFactor = 0.2f;
 
     private void Start()
     {
@@ -33,7 +32,7 @@ public class CameraMovement : MonoBehaviour
 
         Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
 
-        Vector3 scaledOffset = offset * player.localScale.x;
+        Vector3 scaledOffset = offset * (1 + (player.localScale.x - 1) * distanceScalingFactor);
 
         Vector3 targetPosition = player.position + rotation * scaledOffset;
 
