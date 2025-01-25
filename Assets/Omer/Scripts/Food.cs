@@ -8,12 +8,13 @@ public class Food : MonoBehaviour
     public Collider[] col;
     public FoodData foodData;
     public Transform player;
-    public float moveSpeed = 6f;
+    public float moveSpeed;
     private bool isTriggered;
 
 
     void Start()
     {
+        moveSpeed = 6f;
         col = GetComponents<Collider>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         foreach (var c in col)
