@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 moveDirection;
     public Vector3 playerScale;
+
+
     private bool isGrounded;
     private float gravity = -9.81f;
 
