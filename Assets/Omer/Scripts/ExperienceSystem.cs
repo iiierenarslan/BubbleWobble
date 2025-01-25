@@ -8,6 +8,7 @@ public class ExperienceSystem : MonoBehaviour
     private int experienceToNextLevel = 100;
     public int currentLevel = 1;
 
+    public float increaseScale;
 
     public static ExperienceSystem instance;
     void Awake()
@@ -30,7 +31,7 @@ public class ExperienceSystem : MonoBehaviour
     public void AddExperience(int exp)
     {
         experience += exp;
-        PlayerController.instance.playerScale += new Vector3(2f, 2f, 2f); // degiscek  
+        PlayerController.instance.playerScale += new Vector3(increaseScale, increaseScale, increaseScale); // degiscek  
         PlayerController.instance.transform.localScale = PlayerController.instance.playerScale;
         print("Experience: " + experience);
         if (experience >= experienceToNextLevel)
