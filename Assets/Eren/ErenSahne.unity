@@ -663,7 +663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &647986020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -764,7 +764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   rotationSpeed: 5
-  foodcount: 0
+  playerScale: {x: 0, y: 0, z: 0}
 --- !u!54 &647986025
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1720,6 +1720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 633f3ea8eff0f114898351af6b75b773, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2100,7 +2104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rotationSpeed: 5
-  foodcount: 0
+  playerScale: {x: 0, y: 0, z: 0}
 --- !u!54 &2041508966
 Rigidbody:
   m_ObjectHideFlags: 0
