@@ -6,6 +6,16 @@ public class CollisionDetector : MonoBehaviour
 {
     public FoodObject foodObject;
 
+    private void Start()
+    {
+        GameObject parent = transform.parent.gameObject;
+        GameObject childObject = parent.transform.GetChild(0).gameObject;
+        foodObject = childObject.GetComponent<FoodObject>();
+
+    }
+
+
+
     private void OnCollisionEnter(Collision collision)
     {
         // Forward the collision event to FoodObject
