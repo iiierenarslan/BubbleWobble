@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,14 +12,17 @@ public class PlayerController : MonoBehaviour
 
     private float horizontalInput;
     private float verticalInput;
-    public float rotationSpeed = 5f;
+    private float rotationSpeed = 5f;
 
     private Vector3 moveDirection;
     public Vector3 playerScale;
 
 
     private bool isGrounded;
+    private bool isMoving;  
     private float gravity = -9.81f;
+
+    private AudioSource audioSource;
 
     public static PlayerController instance;
 
@@ -37,13 +41,26 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
         rb.useGravity = false;
         playerScale = transform.localScale;
+      
     }
 
     void FixedUpdate()
     {
         HandleMovement();
+        if (isMoving)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
+        }
     }
 
     void HandleMovement()
@@ -65,10 +82,12 @@ public class PlayerController : MonoBehaviour
         if (horizontalInput != 0 || verticalInput != 0)
         {
             moveDirection = inputDirection * speed;
+            isMoving = true;
         }
         else
         {
-            moveDirection = Vector3.zero; 
+            moveDirection = Vector3.zero;
+            isMoving = false;
         }
 
         if (!isGrounded)
@@ -77,9 +96,11 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            moveDirection.y = rb.velocity.y; 
+            moveDirection.y = rb.velocity.y;
         }
 
+
+        //rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
         rb.AddForce(moveDirection * speed, ForceMode.Force);
 
         if (new Vector3(inputDirection.x, 0, inputDirection.z).magnitude > 0.1f)
