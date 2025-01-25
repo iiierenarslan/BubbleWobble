@@ -4,30 +4,12 @@ using UnityEngine;
 
 public class CollisionDetector : MonoBehaviour
 {
-    private Collider[] col;
-    public FoodData foodData;
+    public FoodObject foodObject;
 
-
-    private void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-        col = GetComponents<Collider>();
-        foreach (var c in col)
-        {
-            c.isTrigger = false;
-        }
+        // Forward the collision event to FoodObject
+        foodObject?.HandleCollisionEnter(collision);
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            if (ExperienceSystem.instance.currentLevel >= foodData.foodLevel)
-            {
-                foreach (var c in col)
-                {
-                    c.isTrigger = true;
-                }
-            }
-        }
-    }
 }

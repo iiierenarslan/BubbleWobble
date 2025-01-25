@@ -5,7 +5,7 @@ using UnityEngine;
 public class FoodObject : MonoBehaviour
 {
     public GameObject parent;
-    private Collider[] col;
+    public Collider[] col;
     public FoodData foodData;
     public GameObject childObject;
 
@@ -23,7 +23,7 @@ public class FoodObject : MonoBehaviour
             c.isTrigger = false;
         }
     }
-    private void OnCollisionEnter(Collision other)
+    public void HandleCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
