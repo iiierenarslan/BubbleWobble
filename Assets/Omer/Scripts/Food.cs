@@ -8,7 +8,7 @@ public class Food : MonoBehaviour
     public Collider[] col;
     public FoodData foodData;
     public Transform player;
-    public float moveSpeed = 3f;
+    public float moveSpeed = 6f;
     private bool isTriggered;
 
 
