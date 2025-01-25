@@ -18,6 +18,7 @@ public class CameraMovement : MonoBehaviour
 
     public float distanceScalingFactor = 0.2f;
 
+
     private void Start()
     {
         offset = player.position - transform.position;

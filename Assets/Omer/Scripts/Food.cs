@@ -8,7 +8,7 @@ public class Food : MonoBehaviour
     public Collider[] col;
     public FoodData foodData;
     public Transform player;
-    public float moveSpeed;
+    public float moveSpeed = 3f;
     private bool isTriggered;
 
 
@@ -42,7 +42,7 @@ public class Food : MonoBehaviour
                 }
                 isTriggered = true;
                 ExperienceSystem.instance.AddExperience(foodData.foodValue);
-                Destroy(gameObject, 2);
+                Destroy(gameObject, 0.3f);
             }
         }
     }

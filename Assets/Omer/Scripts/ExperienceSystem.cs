@@ -5,10 +5,11 @@ using UnityEngine;
 public class ExperienceSystem : MonoBehaviour
 {
     private int experience;
-    private int experienceToNextLevel = 100;
+    public int experienceToNextLevel = 100;
     public int currentLevel = 1;
 
-    public float increaseScale;
+
+    public float increaseScale = 0.03f;
 
     public static ExperienceSystem instance;
     void Awake()

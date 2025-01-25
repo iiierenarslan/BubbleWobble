@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
             moveDirection.y = rb.velocity.y; 
         }
 
-        rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
+        rb.AddForce(moveDirection * speed, ForceMode.Force);
 
         if (new Vector3(inputDirection.x, 0, inputDirection.z).magnitude > 0.1f)
         {
