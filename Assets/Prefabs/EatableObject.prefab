@@ -52,7 +52,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 2, z: 0.5}
+  m_Size: {x: 0.2, y: 2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7332548655196288080
 MonoBehaviour:
@@ -66,6 +66,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8dab99019b63c949a3e4ebffaba663d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  foodData: {fileID: 11400000, guid: f671f0dc361c912449d36072ac1e2026, type: 2}
+  childObject: {fileID: 0}
 --- !u!1 &7930736599381401339
 GameObject:
   m_ObjectHideFlags: 0

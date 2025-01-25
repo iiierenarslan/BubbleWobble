@@ -30,6 +30,8 @@ public class ExperienceSystem : MonoBehaviour
     public void AddExperience(int exp)
     {
         experience += exp;
+        PlayerController.instance.playerScale += new Vector3(0.1f, 0.1f, 0.1f); // degiscek  
+        PlayerController.instance.transform.localScale = PlayerController.instance.playerScale;
         print("Experience: " + experience);
         if (experience >= experienceToNextLevel)
         {

@@ -14,10 +14,9 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed = 5f;
 
     private Vector3 moveDirection;
+    public Vector3 playerScale;
     private bool isGrounded;
     private float gravity = -9.81f;
-
-    public int foodcount;
 
     public static PlayerController instance;
 
@@ -37,7 +36,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
-        foodcount = 0;
+        playerScale = transform.localScale;
     }
 
     void FixedUpdate()

@@ -241,9 +241,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: effefaed5e4097d48b9c3c1b4b8dfb0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 25
   rotationSpeed: 5
-  foodcount: 0
+  playerScale: {x: 0, y: 0, z: 0}
 --- !u!54 &647986025
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -591,6 +591,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4372184633009642313, guid: 7c7e43833dec5174cabcdb77fb7b0aed, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4824875559844305693, guid: 7c7e43833dec5174cabcdb77fb7b0aed, type: 3}
       propertyPath: m_Radius
       value: 0.5
@@ -602,7 +606,7 @@ PrefabInstance:
     - target: {fileID: 7332548655196288080, guid: 7c7e43833dec5174cabcdb77fb7b0aed, type: 3}
       propertyPath: foodData
       value: 
-      objectReference: {fileID: 11400000, guid: a1796486115e56e47a61ebefddefb306, type: 2}
+      objectReference: {fileID: 11400000, guid: f671f0dc361c912449d36072ac1e2026, type: 2}
     - target: {fileID: 7842767576368466945, guid: 7c7e43833dec5174cabcdb77fb7b0aed, type: 3}
       propertyPath: m_Size.x
       value: 0.2

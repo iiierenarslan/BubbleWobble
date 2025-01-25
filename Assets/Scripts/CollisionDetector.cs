@@ -2,27 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodObject : MonoBehaviour
+public class CollisionDetector : MonoBehaviour
 {
-    public GameObject parent;
     private Collider[] col;
     public FoodData foodData;
-    public GameObject childObject;
 
-    void Start()
+
+    private void Start()
     {
-        parent = transform.parent.gameObject;
-        
-        if(parent != null)
-        {
-            childObject = parent.transform.GetChild(1).gameObject;
-            col = childObject.GetComponents<Collider>();
-        }
+        col = GetComponents<Collider>();
         foreach (var c in col)
         {
             c.isTrigger = false;
         }
     }
+
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -34,16 +28,6 @@ public class FoodObject : MonoBehaviour
                     c.isTrigger = true;
                 }
             }
-        }
-    }
-
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            ExperienceSystem.instance.AddExperience(foodData.foodValue);
-            Destroy(parent);
         }
     }
 }
