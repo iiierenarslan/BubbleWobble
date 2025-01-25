@@ -4008,6 +4008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevel: 1
+  increaseScale: 0.1
 --- !u!4 &2022076675
 Transform:
   m_ObjectHideFlags: 0
