@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] Objectives;
     public GameObject colliderObj;
 
+    public GameObject finishObject;
+
     public bool isPaused;
     public int count = 0;
 
