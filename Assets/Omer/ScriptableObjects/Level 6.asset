@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Level 6
   m_EditorClassIdentifier: 
   foodLevel: 6
+  foodValue: 15
