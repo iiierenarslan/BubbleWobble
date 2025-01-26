@@ -38,9 +38,8 @@ public class CameraMovement : MonoBehaviour
         Vector3 targetPosition = player.position + rotation * scaledOffset;
 
 
-        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime).normalized;
+        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
 
-        transform.position.Normalize();
 
         transform.LookAt(player.position + Vector3.up * 1.5f); 
 
