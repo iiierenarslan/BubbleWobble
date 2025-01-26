@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
             Objectives[0].gameObject.SetActive(false);
             Objectives[1].gameObject.SetActive(true);
         }
-        if (count >= 500) 
+        if (count >= 480) 
         {
             SceneManager.LoadScene(2);
         }
