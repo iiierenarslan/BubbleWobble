@@ -75,10 +75,7 @@ public class PlayerController : MonoBehaviour
         cameraRight.y = 0;
 
 
-        Vector3 inputDirection = (cameraForward * verticalInput + cameraRight * 0);
-
-
-        if (verticalInput != 0)
+        Vector3 inputDirection = (cameraForward * verticalInput + cameraverticalInput != 0)
         {
             moveDirection = inputDirection * speed;
             isMoving = true;
