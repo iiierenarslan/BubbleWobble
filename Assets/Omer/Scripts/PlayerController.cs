@@ -75,9 +75,8 @@ public class PlayerController : MonoBehaviour
         cameraRight.y = 0;
 
 
-        Vector3 inputDirection = (cameraForward * verticalInput + cameraRight * horizontalInput).normalized;
+        Vector3 inputDirection = (cameraForward * verticalInput + cameraRight * horizontalInput);
 
-        inputDirection.Normalize();
 
         if (horizontalInput != 0 || verticalInput != 0)
         {
