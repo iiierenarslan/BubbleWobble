@@ -47,7 +47,7 @@ public class ExperienceSystem : MonoBehaviour
         print("Level Up!");
         currentLevel++;
         experience -= experienceToNextLevel;
-        experienceToNextLevel *= 2; // degiscek 
+        experienceToNextLevel += 150 ; // degiscek 
         print("Current Level: " + currentLevel);
         print("Experience to next level: " + experienceToNextLevel);
         

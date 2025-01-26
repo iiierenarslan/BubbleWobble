@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         HandlePause();
-        if(count >= 38)
+        if(count >= 40)
         {
             colliderObj.SetActive(false);
             Objectives[0].gameObject.SetActive(false);
