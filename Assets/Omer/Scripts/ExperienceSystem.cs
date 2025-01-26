@@ -32,6 +32,7 @@ public class ExperienceSystem : MonoBehaviour
     public void AddExperience(int exp)
     {
         experience += exp;
+        GameManager.instance.count++;
         PlayerController.instance.playerScale += new Vector3(increaseScale, increaseScale, increaseScale); // degiscek  
         PlayerController.instance.transform.localScale = PlayerController.instance.playerScale;
         print("Experience: " + experience);

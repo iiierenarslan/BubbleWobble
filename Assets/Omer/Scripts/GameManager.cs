@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     
     public GameObject[] pausePanel;
     public GameObject[] Objectives;
+    public GameObject colliderObj;
 
     public bool isPaused;
     public int count = 0;
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-
+        colliderObj = GameObject.Find("StartCollider");
         isPaused = false;
         for (int i = 0; i < pausePanel.Length; i++)
         {
@@ -42,8 +43,9 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         HandlePause();
-        if(count >= 3)
+        if(count >= 38)
         {
+            colliderObj.SetActive(false);
             Objectives[0].gameObject.SetActive(false);
             Objectives[1].gameObject.SetActive(true);
         }
