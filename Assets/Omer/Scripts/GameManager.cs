@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
     public GameObject[] Objectives;
     public GameObject colliderObj;
 
-    public GameObject finishObject;
-
     public bool isPaused;
     public int count = 0;
 
@@ -62,6 +60,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
             isPaused = true;
+            Cursor.visible = true;
             for (int i = 0; i < pausePanel.Length; i++)
             {
                 pausePanel[i].SetActive(true);
@@ -72,6 +71,8 @@ public class GameManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Escape) && isPaused)
         {
             isPaused = false;
+            Cursor.visible = false;
+
             for (int i = 0; i < pausePanel.Length; i++)
             {
                 pausePanel[i].SetActive(false);
