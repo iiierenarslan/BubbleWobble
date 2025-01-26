@@ -81,13 +81,13 @@ public class PlayerController : MonoBehaviour
             moveDirection = inputDirection * speed;
             isMoving = true;
         }
-
-        else if (GetComponent<Rigidbody>().velocity.magnitude > 0.1f)
-        {
-            moveDirection = Vector3.zero;
-            isMoving = false;
-        }
-
+        /*
+                else if (GetComponent<Rigidbody>().velocity.magnitude > 0.1f)
+                {
+                    moveDirection = Vector3.zero;
+                    isMoving = false;
+                }
+        */
 
         else
         {
@@ -105,8 +105,8 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
-
+        //rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
+        rb.AddForce(moveDirection, ForceMode.Impulse);
 
         if (new Vector3(inputDirection.x, 0, inputDirection.z).magnitude > 0.1f)
         {
