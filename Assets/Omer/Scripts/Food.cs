@@ -10,6 +10,8 @@ public class Food : MonoBehaviour
     public Transform player;
     public float moveSpeed;
     private bool isTriggered;
+    public AudioSource audioSource;
+
 
 
     void Start()
@@ -17,6 +19,7 @@ public class Food : MonoBehaviour
         moveSpeed = 6f;
         col = GetComponents<Collider>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        audioSource =  GameObject.Find("eat").GetComponent<AudioSource>();  
         foreach (var c in col)
         {
             c.isTrigger = false;
@@ -43,6 +46,7 @@ public class Food : MonoBehaviour
                 }
                 isTriggered = true;
                 ExperienceSystem.instance.AddExperience(foodData.foodValue);
+                audioSource.Play();
                 Destroy(gameObject, 0.3f);
             }
         }

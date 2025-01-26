@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         rb.useGravity = false;
         playerScale = transform.localScale;
-      
+        
     }
 
     void FixedUpdate()
@@ -84,6 +84,13 @@ public class PlayerController : MonoBehaviour
             moveDirection = inputDirection * speed;
             isMoving = true;
         }
+        else if (GetComponent<Rigidbody>().velocity.magnitude > 0.1f)
+        {
+            moveDirection = Vector3.zero;
+            isMoving = false;
+        }
+
+
         else
         {
             moveDirection = Vector3.zero;
@@ -100,8 +107,8 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        //rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
-        rb.AddForce(moveDirection * speed, ForceMode.Force);
+        rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
+
 
         if (new Vector3(inputDirection.x, 0, inputDirection.z).magnitude > 0.1f)
         {
