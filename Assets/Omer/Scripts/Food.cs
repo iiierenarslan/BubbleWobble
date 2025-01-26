@@ -16,7 +16,7 @@ public class Food : MonoBehaviour
 
     void Start()
     {
-        moveSpeed = 6f;
+        moveSpeed = 8f;
         col = GetComponents<Collider>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         audioSource =  GameObject.Find("eat").GetComponent<AudioSource>();  

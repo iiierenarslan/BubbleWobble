@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     private float gravityScale = 1f;
 
-    private float horizontalInput;
     private float verticalInput;
     private float rotationSpeed = 5f;
 
@@ -65,7 +64,6 @@ public class PlayerController : MonoBehaviour
 
     void HandleMovement()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
         Vector3 cameraForward = Camera.main.transform.forward;
