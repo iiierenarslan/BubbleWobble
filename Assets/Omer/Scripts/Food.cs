@@ -47,6 +47,7 @@ public class Food : MonoBehaviour
                 isTriggered = true;
                 ExperienceSystem.instance.AddExperience(foodData.foodValue);
                 audioSource.Play();
+                GameManager.instance.count++;
                 Destroy(gameObject, 0.3f);
             }
         }

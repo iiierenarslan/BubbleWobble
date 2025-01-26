@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private float gravity = -9.81f;
 
     private AudioSource audioSource;
+    public GameManager gameManager;
 
     public static PlayerController instance;
 
@@ -45,6 +46,16 @@ public class PlayerController : MonoBehaviour
         playerScale = transform.localScale;
         
     }
+
+
+    private void Update()
+    {
+        if (gameManager.isPaused)
+        {
+            audioSource.Stop();
+        }
+    }
+
 
     void FixedUpdate()
     {
@@ -81,13 +92,6 @@ public class PlayerController : MonoBehaviour
             moveDirection = inputDirection * speed;
             isMoving = true;
         }
-        /*
-                else if (GetComponent<Rigidbody>().velocity.magnitude > 0.1f)
-                {
-                    moveDirection = Vector3.zero;
-                    isMoving = false;
-                }
-        */
 
         else
         {
@@ -107,12 +111,12 @@ public class PlayerController : MonoBehaviour
 
         //rb.velocity = new Vector3(moveDirection.x, moveDirection.y, moveDirection.z);
         rb.AddForce(moveDirection, ForceMode.Impulse);
-
+/*
         if (new Vector3(inputDirection.x, 0, inputDirection.z).magnitude > 0.1f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(new Vector3(inputDirection.x, 0, inputDirection.z));
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-        }
+        }*/
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -5,15 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private AudioSource audioSource;
+    public AudioSource[] audioSource;
     
     public GameObject[] pausePanel;
+    public GameObject[] Objectives;
 
-    private bool isPaused;
+    public bool isPaused;
+    public int count = 0;
+
+    public static GameManager instance;
+
+
+    void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
 
         isPaused = false;
         for (int i = 0; i < pausePanel.Length; i++)
@@ -25,12 +41,24 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        HandlePause();
+        if(count >= 3)
+        {
+            Objectives[0].gameObject.SetActive(false);
+            Objectives[1].gameObject.SetActive(true);
+        }
+
+    }
+
+    void HandlePause()
+    {
         if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
         {
             isPaused = true;
             for (int i = 0; i < pausePanel.Length; i++)
             {
                 pausePanel[i].SetActive(true);
+                audioSource[1].Stop();
             }
             Time.timeScale = 0;
         }
@@ -40,20 +68,22 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < pausePanel.Length; i++)
             {
                 pausePanel[i].SetActive(false);
+                audioSource[1].Play();
             }
             Time.timeScale = 1;
         }
     }
 
+
     public void StartGame()
     {
-        audioSource.Play();
+        audioSource[0].Play();
         SceneManager.LoadScene(1);
     }
     public void RestartGame()
     {
         Time.timeScale = 1;
-        audioSource.Play();
+        audioSource[0].Play();
         SceneManager.LoadScene(1);
     }
     public void Resume()
@@ -64,13 +94,15 @@ public class GameManager : MonoBehaviour
         {
             pausePanel[i].SetActive(false);
         }
-        audioSource.Play();
+        audioSource[0].Play();
+        audioSource[1].Play();
+
     }
 
 
     public void QuitGame()
     {
-        audioSource.Play();
+        audioSource[0].Play();
         Application.Quit();
     }
 }
