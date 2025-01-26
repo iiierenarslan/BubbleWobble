@@ -573,77 +573,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 850a5341110e77b458d7bcf5ca510f51, type: 3}
   m_PrefabInstance: {fileID: 12187026}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &12514115
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 915259792}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 128.33188
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 81.64978
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 469.77426
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 53.490955
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1037.3872
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6878749
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.68787503
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.16379283
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.16379282
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -26.787
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_Name
-      value: KULAKLIK
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 325415967}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 325415966}
-  m_SourcePrefab: {fileID: 100100000, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
 --- !u!1001 &13256135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4302,7 +4231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -5982,7 +5911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -6669,7 +6598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -10724,7 +10653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -11859,60 +11788,6 @@ Rigidbody:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 62cfd1085af308f45847f758b2de78bc, type: 3}
   m_PrefabInstance: {fileID: 323433015}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &325415961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-  m_PrefabInstance: {fileID: 12514115}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &325415966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325415961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce729e811f45671419abb0a474345eaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  col: []
-  foodData: {fileID: 11400000, guid: eff3772a008066346886ecb987a1c8e9, type: 2}
-  player: {fileID: 0}
-  moveSpeed: 3
-  audioSource: {fileID: 0}
---- !u!54 &325415967
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325415961}
-  serializedVersion: 4
-  m_Mass: 100
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 122
-  m_CollisionDetection: 0
---- !u!4 &325415970 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-  m_PrefabInstance: {fileID: 12514115}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &334448581
 GameObject:
@@ -13684,7 +13559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -16660,7 +16535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -17286,7 +17161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -18549,7 +18424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -18838,7 +18713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -21702,7 +21577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -24868,7 +24743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -26321,7 +26196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -26847,7 +26722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -27230,7 +27105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -28457,7 +28332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -28887,7 +28762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -31261,7 +31136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -33844,39 +33719,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 35399c1a725e5444a9bbd2d93e155ca5, type: 3}
   m_PrefabInstance: {fileID: 907983551}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &915259791
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 915259792}
-  m_Layer: 0
-  m_Name: "Kulakl\u0131kGrubu"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &915259792
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915259791}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -440.56967, y: -116.709755, z: 871.2107}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 325415970}
-  - {fileID: 1926491403}
-  m_Father: {fileID: 1083402585}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &915645700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37459,7 +37301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -39454,7 +39296,6 @@ Transform:
   - {fileID: 1747552576}
   - {fileID: 537718462}
   - {fileID: 717003207}
-  - {fileID: 915259792}
   - {fileID: 593327646}
   - {fileID: 1175313159}
   - {fileID: 1552429223}
@@ -40162,7 +40003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -42615,7 +42456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -44308,7 +44149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -45275,7 +45116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -52085,7 +51926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -52515,7 +52356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -53202,7 +53043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -56407,7 +56248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -58972,7 +58813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -60137,7 +59978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -62909,7 +62750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -65308,7 +65149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -65935,7 +65776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -70893,7 +70734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -71754,131 +71595,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!1001 &1926491402
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 915259792}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 128.33188
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 81.64978
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 275.35425
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 53.540955
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1025.5172
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      propertyPath: m_Name
-      value: KULAKLIK (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1926491406}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1926491405}
-  m_SourcePrefab: {fileID: 100100000, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
---- !u!4 &1926491403 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-  m_PrefabInstance: {fileID: 1926491402}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1926491404 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ef84ee1562d70d469a7493c05a3c634, type: 3}
-  m_PrefabInstance: {fileID: 1926491402}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1926491405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926491404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce729e811f45671419abb0a474345eaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  col: []
-  foodData: {fileID: 11400000, guid: eff3772a008066346886ecb987a1c8e9, type: 2}
-  player: {fileID: 0}
-  moveSpeed: 3
-  audioSource: {fileID: 0}
---- !u!54 &1926491406
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926491404}
-  serializedVersion: 4
-  m_Mass: 100
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 122
-  m_CollisionDetection: 0
 --- !u!1001 &1939491419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72277,7 +71993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -73202,7 +72918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -74373,7 +74089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -77873,7 +77589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -78541,7 +78257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
@@ -82310,7 +82026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: []
-  foodData: {fileID: 0}
+  foodData: {fileID: 11400000, guid: 0890de6ab63488f41aad7eea990ade75, type: 2}
   player: {fileID: 0}
   moveSpeed: 3
   audioSource: {fileID: 0}
