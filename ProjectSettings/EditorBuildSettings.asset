@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Omer/MainMenu.unity
     guid: 36141a65471861740bfdcebf94815491
   - enabled: 1
-    path: Assets/Omer/Omer.unity
-    guid: 8d7a2d2fb7ccbbb499a16d9c58685bdf
+    path: Assets/Eren/Game.unity
+    guid: 34d7673a8d0e01345a9a3ef93169e62b
   - enabled: 1
     path: Assets/Omer/Win.unity
     guid: e0ee7c515ee677e45a36f142bcd2131f

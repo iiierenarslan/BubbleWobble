@@ -794,7 +794,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a6ba7e6e3a1fb40acc243afadd53bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource:
+  - {fileID: 1306076247}
   pausePanel: []
+  Objectives: []
+  colliderObj: {fileID: 0}
+  finishObject: {fileID: 0}
+  isPaused: 0
+  count: 0
 --- !u!1 &1426458000
 GameObject:
   m_ObjectHideFlags: 0
